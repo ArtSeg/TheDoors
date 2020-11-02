@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Контакты</title>
+    <title>Корзина</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,89 +28,77 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
+        <div id="blackout">
+                <div id="box">
+                  Popup window!<br>
+                  <a href="#" class="close">Close window</a>
+                </div>
+              </div>
+
     <!-- header-start -->
     <header>
-            <div class="header-area header-bg">
-                <div id="sticky-header" class="main-header-area">
-                    <div class="container-fluid">
-                        <div class="header_bottom_border">
-                            <div class="row align-items-center">
-                                <div class="col-xl-3 col-lg-2">
-                                    <div class="logo">
-                                        <a href="index.html">
-                                            <img src="img/the-doors.png" width="210" height="50" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-5">
-                                    <div class="main-menu  d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">
-                                                <li><a href="index.html#about">О компании</a></li>
-                                                <li><a href="index.html#catalogue">Каталог</a></li>                                            
-                                                <li><a href="discounts.html">Акции</a></li>
-                                                <li><a href="contacts.html">Контакты</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2 col-lg-2">
-                                    <nav>
-                                        <a href="cart.html" class="boxed-btn3-line mt-10 boxed-btn-fxd-w">Корзина (<span id="count-carts-items"></span>)</a>
-                                    </nav>
-                                </div>
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                            <ul><p>+ 7 (499) 863 - 93 - 43</ul>
-                                            <ul><p>Крупнейший магазин дверей в России</ul>
-                                    </nav>
-                                </div>
-                                <div class="col-12">
-                                    <div class="mobile_menu d-block d-lg-none"></div>
+        <div class="header-area header-bg">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="img/the-doors.png" width="210" height="50" alt="">
+                                    </a>
                                 </div>
                             </div>
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+											<li><a href="index.html#about">О компании</a></li>
+                                            <li><a href="index.html#catalogue">Каталог</a></li>                                            
+                                            <li><a href="discounts.html">Акции</a></li>
+                                            <li><a href="contacts.html">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2">
+                                <nav>
+                                    <a href="cart.html" class="boxed-btn3-line mt-10 boxed-btn-fxd-w">Корзина (<span id="count-carts-items"></span>)</a>
+                                </nav>
+                            </div>
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                        <ul><p>+ 7 (499) 863 - 93 - 43</ul>
+                                        <ul><p>Крупнейший магазин дверей в России</ul>
+                                </nav>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
                         </div>
-    
                     </div>
+
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
     
 	<!-- КОНТАКТЫ -->
 	<p><a name="catalogue"></a></p> 
     <div class="works_area">
         <div class="container">
-            <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title mb-70">
-                        <h3>Контакты</h3>
-                        <div id="map-contacts" class="map-contacts"></div>
-                        <div class="mt-50">
-                            <h4> + 7 (499) 863 - 93 - 43</h4>
-                            <h4>support@thedoors.com</h4>
+						<h3>Успешно!</h3>
+                        <div class="cart mt-50">
+                            Заказ был успешно оформлен. Мы перезвоним вам и уточним заказ.
                         </div>
-                        <h3>Напишите нам</h3>
-                        <form class="contact-form mt-50">
-                            <div class="form-group">
-                                <label for="EmailInput">Ваша электронная почта</label>
-                                <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="MessTextarea">Ваше сообщение</label>
-                                <textarea class="form-control" id="MessTextarea" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary boxed-btn3-line">Отправить сообщение</button>
-                        </form>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     <!-- КОНЕЦ КОНТАКТОВ -->
@@ -182,18 +170,64 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             return string ? string[1] : null;
         };
        
-        /* map */
+        /* cart */
 
-        var map_contacts = L.map('map-contacts').setView([55.7912, 37.6038], 15);
-        L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 18,
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1,
-            accessToken: 'your.mapbox.access.token'
-        }).addTo(map_contacts);
-        var marker = L.marker([55.7898, 37.5950]).addTo(map_contacts);
+        if (localStorage.getItem("cart") !== null && localStorage.getItem("cart").length > 2) {
+            cart_items = JSON.parse(localStorage.cart);
+
+            var no_items = document.getElementById("no-carts-items");
+            no_items.style.display = "none";
+            
+            let index = 0;            
+            var tableRef = document.getElementById("cart-table");
+
+            for(item of cart_items) {
+                var newRow = tableRef.insertRow(index + 1);
+                var newCell_id = newRow.insertCell(0);
+                var newCell_name = newRow.insertCell(1);
+                var newCell_price = newRow.insertCell(2);
+                var newCell_actions = newRow.insertCell(3);
+                var item_id = document.createTextNode(index + 1);
+                var item_name = document.createTextNode(item.item_name);
+                var item_price = document.createTextNode(item.item_price);
+                newCell_id.appendChild(item_id);
+                newCell_name.appendChild(item_name);
+                newCell_price.appendChild(item_price);
+                newCell_actions.insertAdjacentHTML('beforeend', '<a href="javascript:DeleteItem(' + index + ')">Удалить</a>');
+
+                index += 1;
+            }
+        }
+
+        function DeleteItem(index) {
+            if (localStorage.getItem("cart") !== null) {
+
+            cart_items = JSON.parse(localStorage.cart);
+
+            const index_for_delete = index;
+
+            console.log(cart_items);
+
+            if (index_for_delete > -1) {
+                cart_items.splice(index_for_delete, 1);
+            }
+
+            localStorage.cart = JSON.stringify(cart_items); 
+
+            document.location.reload();
+
+            }
+        }
+
+        function ShowLastStep() {
+            document.getElementById("checkout-button").style.display = "none";
+            document.getElementById("last-step-form").style.display = "block";
+        }
+
+        function Checkout() {
+            localStorage.cart = JSON.stringify([]);
+            document.location.reload();
+        }
 
     </script>
 </body>
